@@ -1,7 +1,7 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebElement;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.*;
@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class GithubTest {
 
     // Выносим элемент ссылки в переменную чтобы избежать дупликации кода
-    WebElement softAssertionsLink = $(byText("Soft assertions"));
+    SelenideElement softAssertionsLink = $(byText("Soft assertions"));
 
     @BeforeAll
     static void beforeAll() {
@@ -26,7 +26,7 @@ public class GithubTest {
         $("#wiki-tab").click();
 
         // Убеждаемся, что в списке страниц (Pages) есть страница SoftAssertions
-        softAssertionsLink.isDisplayed();
+        softAssertionsLink.shouldBe(visible);
 
         // Открываем страницу SoftAssertions
         softAssertionsLink.click();
