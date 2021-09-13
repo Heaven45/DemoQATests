@@ -9,27 +9,45 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class GithubTest {
 
-    // Выносим элемент ссылки в переменную чтобы избежать дупликации кода
-    SelenideElement softAssertionsLink = $(byText("Soft assertions"));
-
     @BeforeAll
     static void beforeAll() {
         Configuration.startMaximized = true;
     }
 
+    // Вариант с использованием поиска
     @Test
-    void softAssertionsTest() {
+    void softAssertionsTestOption1() {
         // Открываем страницу Selenide в Github
         open("https://github.com/selenide/selenide");
 
         // Переходим в раздел Wiki проекта
         $("#wiki-tab").click();
 
-        // Убеждаемся, что в списке страниц (Pages) есть страница SoftAssertions
-        softAssertionsLink.shouldBe(visible);
+        // Вводим начало названия в строку поиска чтобы отфильтновать результаты
+        $("#wiki-pages-filter").setValue("So");
 
-        // Открываем страницу SoftAssertions
-        softAssertionsLink.click();
+        // Открываем страницу SoftAssertions. В данном случае текст уникален, т.к. пишется слитно
+        $(byText("SoftAssertions")).click();
+
+        // Проверяем что внутри есть пример кода для JUnit5
+        $x(("//*[contains(text(),'Using JUnit5')]")).shouldBe(visible);
+        $x(("//*[contains(text(),'ExtendWith')]")).shouldBe(visible);
+    }
+
+    // Вариант с открытием списка вручную
+    @Test
+    void softAssertionsTestOption2() {
+        // Открываем страницу Selenide в Github
+        open("https://github.com/selenide/selenide");
+
+        // Переходим в раздел Wiki проекта
+        $("#wiki-tab").click();
+
+        // Раскрываем список кликом на Show more
+        $(".wiki-more-pages-link button").click();
+
+        // Открываем страницу SoftAssertions. В данном случае текст уникален, т.к. пишется слитно
+        $(byText("SoftAssertions")).click();
 
         // Проверяем что внутри есть пример кода для JUnit5
         $x(("//*[contains(text(),'Using JUnit5')]")).shouldBe(visible);
