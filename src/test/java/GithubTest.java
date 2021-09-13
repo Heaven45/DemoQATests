@@ -1,5 +1,4 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +23,7 @@ public class GithubTest {
         $("#wiki-tab").click();
 
         // Вводим начало названия в строку поиска чтобы отфильтновать результаты
-        $("#wiki-pages-filter").setValue("So");
+        $("#wiki-pages-filter").setValue("Soft");
 
         // Открываем страницу SoftAssertions. В данном случае текст уникален, т.к. пишется слитно
         $(byText("SoftAssertions")).click();
