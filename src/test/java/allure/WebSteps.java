@@ -14,20 +14,29 @@ public class WebSteps {
         open(mainPage);
     }
 
-    @Step("Ищем репозиторий c названием {repository}")
-    public void findRepository(String repository) {
+    @Step("Жмём на строку поиска")
+    public void clickOnSearchField() {
         $(".header-search-input").click();
+
+    }
+
+    @Step("Вводим \"{repository}\" в поле поиска")
+    public void typeRepositoryName(String repository) {
         $(".header-search-input").sendKeys(repository);
+    }
+
+    @Step("Жмём найти")
+    public void submit() {
         $(".header-search-input").submit();
     }
 
-    @Step("Переходим в репозиторий {repository}")
+    @Step("Переходим в репозиторий \"{repository}\"")
     public void clickOnRepositoryName(String repository) {
         $(linkText(repository)).click();
     }
 
     @Step("Проверяем, что в репозитории есть вкладка с текстом Issues")
     public void checkIfPageContainsIssue() {
-        $("[data-content='Issues']").shouldHave(text("Issues"));
+        $("[data-content='Issues']").shouldHave(text("Issu4es"));
     }
 }
