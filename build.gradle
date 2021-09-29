@@ -26,12 +26,6 @@ allure {
     }
 }
 
-configurations {
-    testCompile {
-        extendsFrom testImplementation
-    }
-}
-
 dependencies {
     testImplementation(
             "org.aspectj:aspectjweaver:1.9.6",
