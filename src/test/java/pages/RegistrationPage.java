@@ -1,16 +1,15 @@
 package pages;
 
-import pages.components.CalendarComponent;
 import com.codeborne.selenide.SelenideElement;
+import pages.components.CalendarComponent;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class RegistrationPage {
 
@@ -26,7 +25,7 @@ public class RegistrationPage {
             genderRadioButton = $("[for=gender-radio-1]"),
             userNumber = $("#userNumber"),
             subjectsInput = $("#subjectsInput"),
-            hobbiesCheckbox = $("$hobbiesWrapper"),
+            hobbiesCheckbox = $("[for=hobbies-checkbox-3]"),
             uploadButton = $("#uploadPicture"),
             addressInput = $("#currentAddress"),
             stateSelector = $("#state"),
@@ -79,7 +78,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage choseHobbies(String hobby) {
-        hobbiesCheckbox.$(byText(hobby)).click();
+        $(byText(hobby)).click();
         return this;
     }
 
