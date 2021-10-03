@@ -20,6 +20,7 @@ public class PracticeFormTest {
     String year = "1984";
     String fullDate = "07 July,1984";
     String subjects = "Computer Science";
+    String hobby = faker.options().option("Sports", "Reading", "Music");
     String pathToImage = "images/test.png";
     String currentAddress = faker.address().fullAddress();
     String stateAndCity = "NCR Delhi";
@@ -34,7 +35,7 @@ public class PracticeFormTest {
             "Mobile", mobile,
             "Date of Birth", fullDate,
             "Subjects", subjects,
-            "Hobbies", "Music",
+            "Hobbies", hobby,
             "Picture", "test.png",
             "Address", currentAddress,
             "State and City", stateAndCity);
@@ -56,7 +57,7 @@ public class PracticeFormTest {
                 .typeNumber(mobile)
                 .pickDate(day, month, year)
                 .typeSubject(subjects)
-                .choseHobbies()
+                .choseHobbies(hobby)
                 .uploadPicture(pathToImage)
                 .typeAddress(currentAddress)
                 .choseStateAndCity("NCR", "Delhi")
