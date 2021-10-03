@@ -30,7 +30,7 @@ public class RegistrationPage {
             addressInput = $("#currentAddress"),
             stateSelector = $("#state"),
             stateCityDropdown = $("#stateCity-wrapper"),
-            citysSlector = $("#city"),
+            citySelector = $("#city"),
             submitButton = $("#submit");
 
     public RegistrationPage openPage() {
@@ -96,7 +96,7 @@ public class RegistrationPage {
     public RegistrationPage choseStateAndCity(String state, String city) {
         stateSelector.click();
         stateCityDropdown.$(byText(state)).click();
-        citysSlector.click();
+        citySelector.click();
         stateCityDropdown.$(byText(city)).click();
         return this;
     }
