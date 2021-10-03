@@ -26,7 +26,7 @@ public class RegistrationPage {
             genderRadioButton = $("[for=gender-radio-1]"),
             userNumber = $("#userNumber"),
             subjectsInput = $("#subjectsInput"),
-            hobbiesCheckbox = $("[for=hobbies-checkbox-3]"),
+            hobbiesCheckbox = $("$hobbiesWrapper"),
             uploadButton = $("#uploadPicture"),
             addressInput = $("#currentAddress"),
             stateSelector = $("#state"),
@@ -78,8 +78,8 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage choseHobbies() {
-        hobbiesCheckbox.click();
+    public RegistrationPage choseHobbies(String hobby) {
+        hobbiesCheckbox.$(byText(hobby)).click();
         return this;
     }
 
