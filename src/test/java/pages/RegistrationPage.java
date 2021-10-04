@@ -94,6 +94,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage choseStateAndCity(String state, String city) {
+        stateSelector.scrollTo();
         stateSelector.click();
         stateCityDropdown.$(byText(state)).click();
         citySelector.click();

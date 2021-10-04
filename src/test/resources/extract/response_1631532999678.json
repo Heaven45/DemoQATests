@@ -1,0 +1,141 @@
+{
+  "order": {
+    "orderNumber": "2035821-906478",
+    "orderDate": "2021-08-23T16:28:52+03:00",
+    "clientStatus": "delivered",
+    "clientStatusText": "Доставлен",
+    "clientStatusDescription": null,
+    "obtainingMethod": "DELIVERY",
+    "receivingDateFrom": "2021-08-24",
+    "receivingDateTo": null,
+    "receivingTimeSlot": "10:00 - 14:00",
+    "storagePeriod": null,
+    "inProcessing": true,
+    "paymentMethod": "ONLINE",
+    "needPrepay": false,
+    "totalPrepay": 0,
+    "totalBonusesUsed": 29,
+    "totalDiscounts": 0,
+    "totalServicesCost": 0,
+    "totalDeliveryCost": 249,
+    "totalCatalogCost": 348,
+    "totalCost": 319,
+    "totalServicesDiscount": 0,
+    "comment": null,
+    "storeId": null,
+    "territoryId": null,
+    "territoryName": null,
+    "pickpointId": null,
+    "pickpointNumber": null,
+    "postCode": null,
+    "address": {
+      "country": null,
+      "territoryName": "Коммунарка",
+      "street": "ул. Потаповская Роща",
+      "streetType": "ул",
+      "house": "24",
+      "houseBlock": "2",
+      "building": null,
+      "postCode": null,
+      "apartment": "120",
+      "metroStation": null,
+      "floor": "1",
+      "elevator": "N",
+      "doorphoneCode": null,
+      "entrance": null
+    },
+    "owner": {
+      "profileId": "110000006070678651"
+    },
+    "clubProUser": {
+      "clubProId": "110000006070678651"
+    },
+    "contactUser": {
+      "fio": "Дмитрий",
+      "phone": "79266434408",
+      "email": "kumakova@list.ru"
+    },
+    "orderLines": [
+      {
+        "id": "2035821-906478_0",
+        "productId": "18907130299",
+        "wareId": 168250460299,
+        "price": 70,
+        "catalogPrice": 99,
+        "retailDiscount": 0,
+        "attachmentsMark": null,
+        "appliedActions": [],
+        "discounts": [
+          {
+            "discountId": "14407",
+            "value": 29,
+            "discountType": "BONUS",
+            "name": null,
+            "comment": null
+          }
+        ],
+        "appliedServices": []
+      },
+      {
+        "id": "2035821-906478_1",
+        "productId": "11360660299",
+        "wareId": 149664130299,
+        "price": 249,
+        "catalogPrice": 249,
+        "retailDiscount": 0,
+        "attachmentsMark": null,
+        "appliedActions": [],
+        "discounts": [],
+        "appliedServices": []
+      }
+    ],
+    "appliedServices": [],
+    "appliedActions": [],
+    "statusHistory": [
+      {
+        "clientStatus": "in_transit",
+        "clientStatusText": "Заказ в пути"
+      },
+      {
+        "clientStatus": "to_delivery",
+        "clientStatusText": "Передан в службу доставки"
+      },
+      {
+        "clientStatus": "availability_confirmed",
+        "clientStatusText": "Наличие подтверждено"
+      },
+      {
+        "clientStatus": "check_availability",
+        "clientStatusText": "Проверка наличия"
+      },
+      {
+        "clientStatus": "to_delivery",
+        "clientStatusText": "Передан в службу доставки"
+      },
+      {
+        "clientStatus": "availability_confirmed",
+        "clientStatusText": "Наличие подтверждено"
+      },
+      {
+        "clientStatus": "check_availability",
+        "clientStatusText": "Проверка наличия"
+      },
+      {
+        "clientStatus": "accepted",
+        "clientStatusText": "Принят"
+      }
+    ],
+    "withDelivery": false,
+    "ccTrackingUrls": [
+      "https://logsis.ru/traking/"
+    ],
+    "ccName": "Логсис",
+    "possibleActions": [],
+    "prolongateCount": null,
+    "kisImNumber": null,
+    "problemLines": null,
+    "creditProductId": null,
+    "deliveryServiceLevelCode": "ordinary_delivery",
+    "couponList": []
+  }
+}

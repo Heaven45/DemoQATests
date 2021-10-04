@@ -17,6 +17,6 @@ public class AllureTestSelenideOnly {
         $(".header-search-input").sendKeys("qa-guru/qa_guru_8_6");
         $(".header-search-input").submit();
         $(linkText("qa-guru/qa_guru_8_6")).click();
-        $("[data-content='Issues']").shouldHave(text("Issue5s"));
+        $("[data-content='Issues']").shouldHave(text("Issues"));
     }
 }

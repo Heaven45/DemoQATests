@@ -1,0 +1,95 @@
+[
+  {
+    "orderId": "C_2506521-934191",
+    "orderNumber": "2506521-934191",
+    "createdAt": "2021-09-17T13:50:12.000Z",
+    "status": "accepted",
+    "shippingGroupType": "pickup",
+    "paymentMethod": "cash_or_card",
+    "subtotal": "629",
+    "address": "г. Москва, ул. Широкая, д.13А, ТЦ \"Медведковский\", 2 этаж",
+    "icon": "http://img.ostin.com/upload/content/cmsgate/ru_ostin/ostuat/stores_logo/LOGO_OSTIN_1.png",
+    "receivingDateFrom": "2021-09-18",
+    "workTime": "с 10:00 до 21:00",
+    "workSchedule": [
+      {
+        "workTime": "с 10:00 до 21:00"
+      }
+    ],
+    "storeType": "store",
+    "needPrepay": true,
+    "withDelivery": true,
+    "quantity": 1,
+    "catalogAmount": "699",
+    "bonusesAmount": "0",
+    "discountsAmount": "70.0",
+    "deliveryAmount": "0",
+    "externalDelivery": false,
+    "contact": {
+      "fullName": "Лариса",
+      "phone": "79056619937",
+      "email": "larisa.varentsova@gmail.com"
+    },
+    "products": [
+      {
+        "id": "25755750299",
+        "models": [
+          {
+            "id": "25755750299",
+            "code": "MH6Z76-68",
+            "name": "Базовая шапка с патчем",
+            "url": "/product/25755750299",
+            "skus": [
+              {
+                "id": "186859290299",
+                "code": "TLYWCE6HSO",
+                "size": "One Size",
+                "available": true
+              }
+            ],
+            "color": {
+              "name": "Синий",
+              "type": "image",
+              "value": "https://img.ostin.com/upload/mdm/media_content/resize/9a6/{width}_{height}_{hash}/51304640299.jpg"
+            },
+            "media": [
+              {
+                "type": "photo",
+                "url": "https://img.ostin.com/upload/mdm/media_content/resize/62e/{width}_{height}_{hash}/51304610299.jpg"
+              },
+              {
+                "type": "photo",
+                "url": "https://img.ostin.com/upload/mdm/media_content/resize/0b1/{width}_{height}_{hash}/51304620299.jpg"
+              }
+            ],
+            "price": {
+              "basePrice": "699"
+            },
+            "markers": [
+              "NEW"
+            ],
+            "plates": [],
+            "available": true,
+            "active": {
+              "from": "2021-08-29",
+              "to": "2027-01-01"
+            }
+          }
+        ],
+        "skuId": "186859290299",
+        "quantity": 1,
+        "discounts": [
+          {
+            "type": "discount",
+            "name": "Скидка",
+            "value": "70"
+          }
+        ],
+        "totalPrice": "629"
+      }
+    ],
+    "statusHistory": [],
+    "cancellation": "available",
+    "processing": "ComPro"
+  }
+]
