@@ -37,6 +37,6 @@ public class WebSteps {
 
     @Step("Проверяем, что в репозитории есть вкладка с текстом Issues")
     public void checkIfPageContainsIssue() {
-        $("[data-content='Issues']").shouldHave(text("Issu4es"));
+        $("[data-content='Issues']").shouldHave(text("Issues"));
     }
 }

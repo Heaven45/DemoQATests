@@ -12,7 +12,7 @@ public class AllureTestLambda {
     @Test
     void githubTest() {
 
-        step("Отркрываем главную", () -> {
+        step("Открываем главную", () -> {
             open("https://github.com");
         });
 
